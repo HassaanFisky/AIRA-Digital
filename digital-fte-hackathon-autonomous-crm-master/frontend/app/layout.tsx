@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import EcosystemNav from "@/components/EcosystemNav";
 import { AiraAssistant } from "@/components/AiraAssistant";
 import { LanguageProvider } from "@/context/LanguageContext";
-import { SnowOverlay } from "@/components/SnowOverlay";
+import { WeatherOverlay } from "@/components/WeatherOverlay";
 import { ActionDock } from "@/components/ActionDock";
 import { Notebook } from "@/components/Notebook";
 import { ThemeProvider } from "next-themes";
@@ -49,7 +49,7 @@ export default function RootLayout({
             {/* Subtle Background Detail is now handled by globals.css dot grid */}
             
             {/* Interactivity Layers */}
-            <SnowOverlay />
+            <WeatherOverlay />
             <Notebook />
             <ActionDock />
 
@@ -86,4 +86,3 @@ export default function RootLayout({
     </LanguageProvider>
   );
 }
-
