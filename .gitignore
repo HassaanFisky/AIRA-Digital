@@ -1,13 +1,32 @@
+# Dependencies
+node_modules
+.next
+.vercel
+dist
+build
+
+# Environment
+.env
+.env.local
+.env.production
+.env*.local
+
+# Python
+venv
+__pycache__
+*.pyc
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tsbuildinfo
+build_output.log
+
+# Dependencies
 node_modules/
-.next/
-out/
+**/.next/
 build/
-dist/
-.env*
-!.env.example
-*.log
-.ds_store
-.vercel/
-.pyc
-__pycache__/
-.venv/
+**/.env*
